@@ -10,10 +10,10 @@ with open('Final_model.pkl','rb') as file:
     model=pickle.load(file)
 
 with open('pca.pkl','rb') as file:
-    model=pickle.load(file)
+    pca=pickle.load(file)
 
 with open('scaler.pkl','rb') as file:
-    model=pickle.load(file)
+    scaler=pickle.load(file)
 
 def prediction(input_data):
 
@@ -51,4 +51,4 @@ def main():
         st.success(response)
 
 if __name__ == '__main__':
-    main()
+    
